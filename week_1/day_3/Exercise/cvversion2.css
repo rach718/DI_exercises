@@ -1,0 +1,86 @@
+BODY{
+	margin-top: 70px;
+  margin-bottom: 70px;
+}
+#container {
+	display: grid;
+	grid-template-areas: 
+		"header"
+		"summary"
+		"language"
+		"professional"
+		"nonprofit"
+		"education"
+		"license";
+	grid-gap: 10px;	
+	margin: auto;
+	width: 90%;
+}
+
+section {
+	background-color: #544F4F;
+	color: white;
+}	
+
+#header {
+	grid-area: header;
+	text-align: center;
+}
+
+#summary {
+	grid-area: summary;
+	text-align: center;
+}
+
+#language {
+	grid-area: language;
+	text-align: center;
+}
+
+#professional {
+	grid-area: professional;
+	text-align: center;
+}
+
+#nonprofit {
+	grid-area: nonprofit;
+	text-align: center;
+}
+
+#education {
+	grid-area: education;
+	text-align: center;
+}
+
+#license {
+	grid-area: license;
+	text-align: center;
+}
+
+.section-header{
+	text-align: center;
+	border-bottom: 2px solid white;
+}
+
+.section-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 75%;
+	min-height: 20px;  
+}
+
+@media only screen and (min-width: 800px) {
+
+	#container {
+		display: grid;
+		grid-template-areas: 
+			"header header"
+			"summary summary"
+			"language language"
+			"professional nonprofit"
+			"education education"
+			"license license";
+		grid-gap: 10px;	
+	}
+}
