@@ -1,0 +1,18 @@
+h2 {
+	text-align: center;
+}
+ul {
+	overflow: auto;
+
+}
+.heading1 {
+	display: flex;
+	justify-content: center;
+}
+
+li {
+	display: inline-flex;
+	color: black;
+}
+
+

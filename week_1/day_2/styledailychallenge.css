@@ -1,0 +1,66 @@
+h1 {
+	color: white
+}
+
+body {
+  background-color: black;
+  width: 50%;
+  margin: 50px auto;
+}
+
+div {
+  padding: 40px 0px;
+  border-radius: 5px;
+}
+
+#grid1 {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-areas: 
+	'leftheader leftheader rightheader rightheader'
+	'sidebar panel panel panel'
+	'footer footer footer footer';
+}
+
+#leftheader { grid-area: leftheader; background-color: red;}
+
+#rightheader { grid-area: rightheader; background-color: blue;}
+
+#sidebar { grid-area: sidebar; background-color: green;}
+
+#panel { grid-area: panel; background-color: purple;}
+
+#footer { grid-area: footer; background-color: yellow;}
+
+
+
+#grid2 {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+  'header header header header header header'
+  'leftside main main main rightside rightside'
+  'leftside footer footer footer footer footer';
+}
+
+#header2 { grid-area: header; background-color: red;}
+#leftside2 { grid-area: leftside; background-color: blue;}
+#main2{ grid-area: main; background-color: purple;}
+#rightside2 { grid-area: rightside; background-color: green;}
+#footer2 { grid-area: footer; background-color: yellow}
+
+#grid3 {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat (12, 1fr);
+	grid-gap: 5px;
+}
+
+#header3 { text-align: center; grid-row: 1; grid-column: 1 / span 8; background-color: lightblue; }
+#lightgrey3 { text-align: center; grid-row: 2 / span 3; grid-column: 1 / span 3; background-color: lightgrey; }
+#yellow3 { text-align: center; grid-row: 2 /span 5; grid-column: 4 / span 5; background-color: yellow; }
+#lightgreen3 { text-align: center; grid-row: 5 / span 5; grid-column: 1 / span 3; background-color: lightgreen; }
+#darkgrey3 { text-align: center; grid-row: 7 / span 3; grid-column: 4 / span 5; background-color: darkgrey; }
+#darkgreen3 { text-align: center; grid-row: 10 / span 2; grid-column: 1 / span 6; background-color: darkgreen; }
+#white3 { text-align: center; grid-row: 10 / span 2; grid-column: 7 / span 2; background-color: white; }
+#orange3 { text-align: center; grid-row: 12; grid-column: span 8; background-color: orange; }
