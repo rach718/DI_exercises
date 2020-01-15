@@ -11,7 +11,8 @@ BODY{
 		"professional"
 		"nonprofit"
 		"education"
-		"license";
+		"license"
+		"references;
 	grid-gap: 10px;	
 	margin: auto;
 	width: 90%;
@@ -57,6 +58,11 @@ section {
 	text-align: center;
 }
 
+#references {
+	grid-area: references;
+	text-align: center;
+}
+
 .section-header{
 	text-align: center;
 	border-bottom: 2px solid white;
@@ -80,7 +86,8 @@ section {
 			"language language"
 			"professional nonprofit"
 			"education education"
-			"license license";
+			"license license"
+			"references references";
 		grid-gap: 10px;	
 	}
 }
