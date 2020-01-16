@@ -1,0 +1,25 @@
+border-left {2px solid pink}
+border-radius {5px}
+
+.red-button {
+	color: white;
+	background-color: red;
+	border-bottom:2px solid crimson;
+	border-right: 2px solid crimson;
+	border-top: 2px solid pink;
+	border-left:2px solid pink;
+}
+.red-button: hover{
+	transform: scale(1.03);
+	background-color: pink;
+	border-bottom:2px solid indianred;
+	border-right: 2px solid indianred;
+	border-top: 2px solid red;
+	border-left:2px solid red;
+}
+/*.container{ display: grid;
+grid-template-areas:  repeat(12, 1fr)}
+
+
+
+}
