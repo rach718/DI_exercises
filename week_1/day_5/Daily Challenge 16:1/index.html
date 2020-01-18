@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark">
+     <a class="navbar-brand" href="#">Travel Israel</a>
+    <button class="navbar-toggler" type="button"    data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">HOME<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#aboutme">ABOUT<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">CONTACT<span class="sr-only">(current)</span><span class="badge badge-pill badge-light">3</span></a>
+        </li>
+
+        <li class="nav-item">
+          <div class="dropdown menu">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown
+             <span class="caret"></span></button>
+             <ul class="dropdown-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="email" placeholder="email" aria-label="email">
+      <input class="form-control mr-sm-2" type="password" placeholder="password" aria-label="password">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Sign In</button>
+    </form>
+  </nav>
+
+<div class="jumbotron text-center">
+  <h1>TRAVEL ISRAEL</h1><br>
+  <h4>SEE ANCIENT HISTORY COME TO LIFE!</h4><br>
+  <button type="button" class="btn btn-primary">Learn More</button>
+</div>
+<div class="container">
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Warning!</strong> Your subscription is about to end!
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>JERUSALEM</h3>
+      <p>Jerusalem is a city in the Middle East, located on a plateau in the Judaean Mountains between the Mediterranean and the Dead Sea.</p>
+      <p>It is one of the oldest cities in the world, and is considered holy to the three major Abrahamic religions—Judaism, Christianity, and Islam.</p>
+      <p><button type="button" class="btn btn-default"><span class="fa fa-search"></span> View Details</button></p>
+    </div>
+
+    <div class="col-sm-4">
+      <h3>TIBERIUS</h3>
+      <p>Tiberias is an Israeli city on the western shore of the Sea of Galilee. Its Old City holds important Jewish and Christian pilgrimage sites including the Tomb of Maimonides and Abulafia (Etz Chaim) Synagogue.</p>
+      <p>The waterfront and south of the city have exciting sites worth exploring!</p>
+      <p><button type="button" class="btn btn-default"><span class="fa fa-search"></span> View Details</button></p>
+    </div>
+
+    <div class="col-sm-4">
+      <h3>TZFAT <span class="badge badge-primary">New</span></h3>        
+      <p>Safed is a city in the Northern District of Israel. Located at an elevation of 900 metres, Safed is the highest city in the Galilee and in Israel.</p>
+      <p>Due to its high elevation, Safed experiences warm summers and cold, often snowy, winters. Explore ancient sites in this quaint hilltop city.</p>
+      <p><button type="button" class="btn btn-default"><span class="fa fa-search"></span> View Details</button></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

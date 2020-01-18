@@ -1,0 +1,13 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.navbar a:hover {
+	background-color: grey;
+}
+
+.jumbotron{
+	margin-top: 40px;}
+
