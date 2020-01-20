@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript" src="exercise.js"></script>
+</body>
+</html>
+
+<!-- Daily challenge :
+Using this array,
+var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+
+Remove the Banana from the array.
+Sort the array in order.
+Put “Kiwi” at the end of the array.
+Remove “Apples” from the array.
+Sort the array in reverse order. (Not alphabetical, but reverse (the current Array i.e. [‘a’, ‘c’, ‘b’] becomes [‘b’, ‘c’, ‘a’])
+you should have at the end:
+[“Kiwi”, “Oranges”, “Blueberries”]
+
+ -->
+
+<!-- Gold Challenge, Ninja Challenge, and in-class challenges: -->
+
+<!-- Exercise 1:
+Ask a number to the user, and save it to a variable.
+Check if the variable is an even number
+If yes, display: “x is an even number’. Where x is the actual number of the user
+If no, display “x is not an even number’. Where x is the actual number of the user -->
+
+
+<!-- Exercise 2:
+Create 2 variables, x and y =. Each of them has a different numeric value
+Write an if/else statement that display the bigger number -->
+
+
+<!-- Exercise 3:
+Ask the user which language he speaks
+Create a few conditions :
+If he speaks French : display “Bonjour”
+If he speaks English : display “Hello”
+If he speaks Hebrew : display “Shalom”
+If he doesn’t speak none of these 3 languages: display “😊” -->
+
+<!-- Exercise 4:
+Ask the user for his grade
+If the score is bigger than 90, console.log ‘A’
+If the score is between 80 and 90, console.log ‘B’
+If the score is between 70 and 80, console.log ‘C’
+If the score is lower than 70, console.log ‘D’ -->
+
+
+<!-- Exercise 5:
+var me = [“my”,”favorite”,”color”,”is”,”blue”]
+1. Write a simple JavaScript program to join all elements of the following array into a string
+ -->
+
+
+<!-- 
+//Exercise 6:
+Create a string
+If the length of this string is at least 3, it should add ‘ing’ to its end, unless it already ends in ‘ing’, in which case it should add ‘ly’ instead.
+If the string length is less than 3, it should leave it unchanged.
+For example:
+The string is : ‘swim’ , your program should console.log : ‘swimming’
+The string is : ‘swimming’, your program should console.log : ‘swimmingly’
+The string is : ‘go’ your program should console.log : ‘go’
+ -->
+
+
+<!-- Exercise 7: -->
+<!--  Create a string that has the word “not” and “bad” inside
+Create another variable that should find the first appearance of the substring ‘not’ and ‘bad’.
+If the ‘bad’ follows the ‘not’, then it should replace the whole ‘not’…’bad’ substring with ‘good’ than console.log the result.
+If it doesn’t find ‘not’ and ‘bad’ in the right sequence (or at all), just console.log the original sentence.
+For example:
+Your string is : ‘This dinner is not that bad!’, the result is : ‘This dinner is good!’
+Your string is : ‘This movie is not so bad!’ the result is : ‘This movie is good!’
+Your string is : ‘This dinner is bad!’ the result is : ‘This dinner is bad!’ -->
+
+
+<!-- Exercise 8: -->
+<!-- 
+// change everything below to the newer Javascript!
+​
+// let + const
+var a = 'test';
+var b = true;
+var c = 789;
+a = 'test2';
+ -->
+
+
+
+<!-- 
+Exercise 9:
+// console log firstName lastName age eyeColor,num,city
+var person = {
+    firstName : "John",
+    lastName  : "Doe",
+    age       : 50,
+    eyeColor  : "blue",
+    id:{
+      num:909090,
+      add:{
+        city:'tel aviv'
+      }
+    }
+};
+​
+
+
+​//Exercise 10:
+// add a default argument to the function
+// set default age to 10;
+​
+function isValidAge(age) {
+    return age
+}
+alert (isValidAge() );
+​
+​
+
+//Exercise 11:
+// Change to Arrow functions
+function whereAmI(username, location) {
+    if (username && location) {
+        return "I am not lost";
+    } else {
+        return "I am totally lost!";
+    }
+}
+
+
+Exercise 12:
+
+// For all of these, what is the value of when the function gets called with the alert()
+/ For all of these, what is the value of when the function gets called with the alert()
+// #1
+// function q1() {
+//     var a = 5;
+//     if(a > 1) {
+//         a = 3;
+//     }
+//     alert(a);
+// } 
+// ​
+// ​
+// #2
+// var a = 0;
+// function q2() {
+//     a = 5;
+// }
+// function q22() {
+//     alert(a);
+// }
+// ​
+// ​
+// #3
+// function q3() {
+//     window.a = "hello";
+// }
+// function q32() {
+//     alert(a);
+// }
+// ​
+// #4
+// var a = 1;
+// function q4() {
+//     var a = "test";
+//     alert(a);
+// }
+// ​
+// //#5
+// var a = 2;
+// if (true) {
+//     var a = 5;
+//     alert(a);
+// }
+// alert(a);
+
+
+
+<!-
+Exercise 13:
+//#1 change this function into a ternary and assign it to variable called experiencePoints
+function experiencePoints() {
+    if (winBattle()) {
+        return 10;
+    } else {
+        return 1;
+    }
+}
+​
+//Using this function, answer the questions below:
+function moveCommand(direction) {
+    var whatHappens;
+    switch (direction) {
+        case "forward":
+            break;
+            whatHappens = "you encounter a monster";
+        case "back":
+            whatHappens = "you arrived home";
+            break;
+            break;
+        case "right":
+            return whatHappens = "you found a river";
+            break;
+        case "left":
+            break;
+            whatHappens = "you run into a troll";
+            break;
+        default:
+            whatHappens = "please enter a valid direction";
+    }
+    return whatHappens;
+}
+​
+//#2 return value when moveCommand("forward");
+​
+//#3 return value when moveCommand("back");
+​
+//#4 return value when moveCommand("right");
+​
+//#5 return value when moveCommand("left");
+​
+//BONUS: practice makes perfect. Go and write your own switch function. It takes time to get used to the syntax!
