@@ -4,45 +4,136 @@
 	<title>Rachel Jakob Profile</title>
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<nav class="navbar navbar-expand-sm bg-warning navbar-dark">
-		<!-- Toggler/collapsibe Button -->
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav justify-content-center">
 				<li class="nav-item active">
-					<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="#home">HOME<span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="#aboutme">About Me <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="#aboutme">ABOUT ME<span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="#portfolio">Portfolio<span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="#portfolio">PORTFOLIO<span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="#contact">Contact<span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="#blog">BLOG<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#contact">CONTACT<span class="sr-only">(current)</span></a>
 				</li>
 			</ul>
 		</div>
 	</nav>
 
-	<section id="home">
+	<section id="header">
 		<div class="jumbotron">
-			<h2 class="display-4">Welcome to my site!</h2>
-			<p class="lead"><h2>FAST. EFFICIENT. BOLD. BEAUTIFUL DESIGNS.</h2></p>
+			<h2 class="display-4">MY PORTFOLIO</h2>
+			<p class="lead"><h2 class="display-5">FAST. EFFICIENT. BOLD. BEAUTIFUL DESIGNS.</h2></p>
 			<a class="btn btn-warning btn-lg" href="#" role="button">Learn more</a>
 		</div>
 	</section>
 
-	<section id="aboutme" class="shrinkbox" class="container">
-		<img src="rjpic.jpg" height="150px" width="150px" style="border-radius: 50%"> 
-		<h4>Rachel Jakob<h4>
-	</section>
+	<section id="aboutme" class="shrinkbox">
+		<h2>ABOUT ME</h2>
+		<div class="media">
+			<figure class="figure">
+				<img class="align-self-center mr-3 figure-img" src="rjpic.jpg" alt="profile pic" height="170px" width="170px" style="border-radius: 50%">
+				<figcaption class="figure-caption"><h6>RACHEL JAKOB</h6></figcaption></figure>
+				<div class="media-body">
+					<p>Originally from NYC and now based in Tel Aviv, my interest in web development began while working on websites for my own businesses. I had hired developers to work on these sites, however, I discovered I could fix more detailed items to my liking and faster on my own. All I needed was google to teach me and access to the site:). Fast forward a few years and after having completed an intensive coding bootcamp, I'm now a full-time freelance developer.</p>
+					<p>Experienced in HTML, CSS, Bootstraps, Javascript, and Python.</p>
+				</div>
+			</div>
+		</section>
 
-	<section id="portfolio" class="shrinkbox"></section>
-	<section id="contact"></section>
-</body>
-</html>
+		<section id="portfolio" class="shrinkbox"><h2>PORTFOLIO<h2>
+			<div class="row">
+				<div class="col col-sm-4">
+					<div class="card">
+						<div class="card-body">
+							<img class="card-img-top" src="port3.png" alt="Card image cap" style="height:250px">
+							<h5 class="card-title">1</h5>
+							<p class="card-text"></p>
+							<a href="#" class="btn btn-default">View Here</a>
+						</div>
+					</div>
+				</div>
+				<div class=" col col-sm-4">
+					<div class="card" >
+						<div class="card-body" >
+							<img class="card-img-top" src="image6.png" alt="Card image cap" style="height:250px">
+							<h5 class="card-title">2</h5>
+							<p class="card-text"></p>
+							<a href="#" class="btn btn-default">View Here</a>
+						</div>
+					</div>
+				</div>
+				<div class=" col col-sm-4">
+					<div class="card">
+						<div class="card-body">
+							<img class="card-img-top" src="image2.jpg" alt="Card image cap" style="height:250px">
+							<h5 class="card-title">3</h5>
+							<p class="card-text"></p>
+							<a href="#" class="btn btn-default">View Here</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="blog" class="shrinkbox"><h2>BLOG</h2>
+			<div class="card-deck">
+				<div class="card">
+					<img class="card-img-top" src="new.jpg" alt="Card image cap" style="height:250px">
+					<div class="card-body">
+						<h5 class="card-title">NEW IN CODING</h5>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top" src="101.jpg" alt="Card image cap" style="height:250px">
+					<div class="card-body">
+						<h5 class="card-title">WEB DESIGN 101</h5>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top" src="nasa.jpg" alt="Card image cap" style="height:250px">
+					<div class="card-body">
+						<h5 class="card-title">TECH LANDSCAPE</h5>
+					</div>
+				</div>
+			</div>
+
+			<section id="contact">
+				<div class="row">
+					<div id="getintouch" class="col-sm-6" >
+						<h2>GET IN TOUCH<h2>
+
+							<i class="fa fa-github" style="font-size:35px;color:orange"></i>
+
+							<i class="fa fa-linkedin-square" style="font-size:35px;color:orange"></i>
+
+								<i class="fa fa-facebook-official" style="font-size:35px;color:orange"></i>
+							</div>
+							<form class="col-sm-6">
+								<div class="form-group">
+									<label for="usr"></label>
+									<input type="text" class="form-control" id="usr" placeholder="Your Name">
+								</div>
+								<input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+								<div class="form-group">
+									<label for="comment"></label>
+									<textarea class="form-control" rows="4" id="comment"placeholder="Leave us a message!"></textarea>
+								</div>
+								<button type="submit" class="btn btn-warning">Send</button>
+							</form>
+						</div>
+					</section>
+				</body>
+				</html>
