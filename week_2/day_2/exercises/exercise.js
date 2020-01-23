@@ -29,6 +29,8 @@
 // console.log(fruits);
 // }
 
+// var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+// console.log(array2[1][1][0])
 
 // // Exercise 1:
 // let x = prompt ("Please choose a number");
