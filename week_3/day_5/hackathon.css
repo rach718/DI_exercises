@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 ​
-html,h1,h2,h3,h4,h5,h6,a{
+html,h1,h2,h3,h4,h5,h6,a,button,dialog{
 	font-family: "Raleway";
 }
 
@@ -9,34 +9,25 @@ body {
 }
 
 
-/*nav {
-	height: 50px;
-	display: flex;
-	justify-content: center;
-/*	text-align: center;
-	align-items: center;*/
-
-/*}*/
-​
-.navbar-nav {
-	margin: auto;
-}
-
 .jumbotron {
-	background-image: url("final-animation.gif");
-	background-size: contain;
-	background-attachment: fixed;
-	margin-bottom: 40px;
-	text-align: center;
-	/*background-position: absolute;*/
-	padding-top: 50px;
-    padding-bottom: 250px;
+	background-image: url(final-animation.gif);
+/*	background-attachment: fixed;*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 300px;
 }
 
-.shrinkbox {
-	margin-left: 60px;
-	margin-right:30px;
-}
+/*.shrinkbox {*/
+/*	margin-left: 75px;
+	margin-right: 30px;*/
+/*	margin: auto;*/
+/*	display: flex;*/
+/*	justify-content: center;*/
+/*	align-content: center;*/
+/*}*/
+
+
 .display-4 {
 	color: orange;
 	text-align: center;
@@ -49,15 +40,24 @@ body {
 	text-shadow: 2px 2px lightgrey;
 }
 ​
-#songs {
-	height: 400px;
-	margin: auto;
 ​
+h2 {
+	color: orange;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
 }
+​
 ​
 .card-title{
 	text-align: center;
 }
+​
+#contactrow {
+	height: 360px;
+	margin-top: 30px;
+}
+
 ​
 ​
 #text{
@@ -71,32 +71,43 @@ body {
 }
 ​
 
-#hello{
-	margin-left: 50px;
+.showbutton {
+	color: lightyellow;
 }
 
-.card {
+
+
+ .card {
  	text-align: center;
+ 	width: 25rem;
+ 	margin: 20px;
  }
 ​
-#row1, #row2, #row3 {
-	margin-top: 50px;
+#row1 {
+	margin-top: 30px;
 }
 
 .lyrictext {
-	width:200px;
 	background-color:#F4FFEF;
-	border:1px dotted black;
+	border:2px dotted blue;
 	z-index: 1000;
 }
 
-.instruments{
-	margin-top: 75px;/*
-	margin-bottom: 0px;*/
 
+.lyricscroll {
+	width:400px;
+	max-height: 200px;
+	overflow: scroll;
 }
-#music{
-	margin-left: 100px
+
+.closebutton {
+	background-color: orange;
+}
+
+
+.instruments{
+	margin-top: 20px;
+	margin-left: 150px;
 }
 
 
@@ -110,3 +121,20 @@ body {
 
 
 
+.card-img-top:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
