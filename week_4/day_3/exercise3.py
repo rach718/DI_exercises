@@ -93,15 +93,22 @@
 #
 # Exercise 13:
 
-# age = int(input("Welcome: What is your age? "))
-#
+
+# quits = ['quit','Quit', 'QUIT']
 # while True:
-#         if age <=2:
-#                 print("  You get in free!")
+#
+#         menu_choice = input('''Welcome. Please select your choice:
+#                                 \na. get my ticket pricing
+#                                  \nb. exit ''')
+#         if menu_choice == 'a':
+#                 age = int(input("Welcome: What is your age? "))
+#                 if int(age) <= 2:
+#                         print("  You get in free!")
+#                 elif int(age) <= 12:
+#                         print("  Your ticket is $10.")
+#                 else:
+#                         print("  Your ticket is $15.")
+#         elif menu_choice == 'b':
 #                 break
-#         elif age <= 12:
-#                 print("  Your ticket is $10.")
-#                 break
-#         else:
-#                 print("  Your ticket is $15.")
-#                 break
+
+
