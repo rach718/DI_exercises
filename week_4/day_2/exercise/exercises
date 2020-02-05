@@ -1,0 +1,66 @@
+# SET:
+# fav = {2,4,6,8}
+# new_fav = fav.union({10, 12})
+# print(new_fav)
+# new_fav.remove(12)
+# print(new_fav)
+#
+# friend_fav = {1,3,5}
+# print(friend_fav)
+#
+# our_fav = new_fav.union(friend_fav)
+# print(our_fav)
+
+# TUPPLE:
+# my_fav = (2,4,6,8)
+# l = list(my_fav)
+# print(l)
+# l.append(20)
+# print(l)
+# l.append(22)
+# print(l)
+# l.remove(22)
+# print(l)
+# bff_fav=(10,12)
+# l2=list(bff_fav)
+# print(l2)
+#
+# us_fav = my_fav + bff_fav
+# print(us_fav)
+
+# Exercise 4:
+
+# a.
+# list = []
+# for number in range(0,10):
+#     print(number)
+#     list.append(number)
+# print(list)
+#
+# # b.
+# list2 = []
+# for number2 in range(1,11):
+#      print(number2)
+#      list2.append(number2)
+# print(list2)
+#
+# # c.
+#
+# list3 = []
+# for number3 in range(-9,5):
+#      print(number3)
+#      list3.append(number3)
+# print(list3)
+#
+
+# d.
+list4 = []
+for number4 in range(10,4):
+      print(number4)
+      list4.append(number4)
+print(list4)
+
+
+
+
+
