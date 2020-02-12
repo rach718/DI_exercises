@@ -51,6 +51,22 @@ new_dish.remove_item("Steak")
 
 # PLEASE IGNORE THE BELOW. THANKS!
 
+# To add spice:
+#
+#
+# def add_item(self, name, price, spice, gluten):
+#     item = {}
+#     item["name"] = name
+#     item["price"] = price
+#     if spice == "A":
+#         item["spice"] = "not spicy"
+#     elif spice == "B":
+#         item["spice"] = "a little spicy"
+#     elif spice == "C":
+#         item["spice"] = "very spicy"
+#     item["gluten"] = gluten
+#     self.menuItems.append(item)
+
 # class MenuManager:
 #     def __init__(self):
 #         self.menu = []
