@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% include 'style.html' %}
+{% block content %}
+
+<br>
+<div class="loginform">
+<form method="post">
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.username.label }} {{ form.username(size=30) }}
+
+    </p>
+
+    <p>
+        {{ form.password.label}} {{ form.password(size=30) }}
+
+    </p>
+    <p>
+		{{ form.submit}}
+    </p>
+
+</form>
+</div>
+
+{% endblock %}
+

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    <title>The Designers Home</title>
+{% endblock %}
+
+
+{% block content %}
+<div class="productpage">
+    <br><br>
+    <h2 style="text-align: center; color: #36474E; font-weight: bold">BEAUTIFUL. HAND-CRAFTED. LUXURIOUS</h2>
+    <br><br>
+    {% for item in products %}
+<a href="/productdetails/{{item['id']}}" style="color: #677479; text-align:center; text-decoration: underline"> <h1>{{item['name']}}</h1></a>
+        {% if item['stock'] > 0 %}
+            <p style="text-align: center">Price: ${{item['price']}} </p>
+        {% else %}
+            <p class="outofstock" style="text-align:center">Out of Stock</p>
+        {% endif %}
+    {% endfor %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+[
+    {
+        "name": "The Goddess Velvet Pillow",
+        "price": 250,
+        "instock": true
+    },
+    {
+        "name": "The Dashing Mocha Pillow",
+        "price": 200,
+        "instock": true
+    },
+    {
+        "name": "The Metallic Fury Pillow",
+        "price": 150,
+        "instock": true
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 0,
+        "name": "The Aqua Envy Pillow",
+        "price": 250,
+        "stock": 4,
+        "image": "aquaenvy.JPG"
+    },
+    {
+        "id": 1,
+        "name": "Winter Frost Sochi Pillow",
+        "price": 200,
+        "stock": 5,
+        "image": "0.JPG"
+    },
+    {
+        "id": 2,
+        "name": "Velvet Goes Wordly Pillow",
+        "price": 250,
+        "stock": 5,
+        "image": "velvetgoeswordly.png"
+    },
+    {
+        "id": 3,
+        "name": "Reptillian Gold Pillow",
+        "price": 250,
+        "stock": 0,
+        "image": "14site.JPG"
+    }
+]

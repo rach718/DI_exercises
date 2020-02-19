@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    <title>The Designers Home</title>
+{% endblock %}
+
+
+{% block content %}
+<!--<div id="particles-js">-->
+    <br>
+    <h1 style="color: grey; text-align:center">THE DESIGNERS HOME</h1>
+    <br>
+    <div class="home_image">
+        <img style= "width: 90%" src="{{ url_for('static', filename = 'images/home.jpg') }}">
+    </div>
+<!--</div>-->
+<!--    <script type="text/javascript" src="{{ url_for('static', filename = 'js/particle.js') }}"></script>-->
+{% endblock %}
