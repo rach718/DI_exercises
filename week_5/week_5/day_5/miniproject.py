@@ -27,7 +27,6 @@ class AnagramChecker:
         else:
             return False
 
-<<<<<<< HEAD
 # my_checker = AnagramChecker()
 
 # print(my_checker.list)
@@ -35,15 +34,6 @@ class AnagramChecker:
 # my_other_checker = AnagramChecker()
 #
 # is_anagram = my_checker.is_anagram("MEAT", "MATE")
-=======
-my_checker = AnagramChecker()
-
-# print(my_checker.list)
-
-my_other_checker = AnagramChecker()
-
-is_anagram = my_checker.is_anagram("MEAT", "MATE")
->>>>>>> 9abcdba50c603f2471068b249086de997d50f2a2
 
 # print(is_anagram)
 
