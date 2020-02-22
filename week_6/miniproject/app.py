@@ -2,7 +2,6 @@ from flask import Flask
 from flask import render_template
 from flask import request, redirect
 from forms import *
-from flask_socketio import SocketIO, send
 
 import db
 
