@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html,h1,h2,p, button{
+	font-family: "Roboto";
+}
+
+
+.jumbotron {
+  background-size: cover;
+  margin: auto;
+}
+
+.jumbotron-content {
+  color: white;
+}
+
+.productpage{
+    font-size: 20px;
+}
+
+.loginform{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-weight: bold
+}

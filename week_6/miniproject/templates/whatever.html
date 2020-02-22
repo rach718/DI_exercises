@@ -1,0 +1,228 @@
+<!--
+import json
+
+def create_database(dst_file='my_file.json'):
+    data = { 'products' :[
+        {
+            'id': 0,
+            'name': 'Innisfree: Best Seller Discovery Set',
+            'price': 40,
+            'image': 'all-in-one1.png',
+            'category': 'allinone',
+            'what is it': "What is it: An essential set of Innisfree's bestselling pore clearing clay mask, hydrating serum, and firming cream\n\n",
+            'skin type': 'Skin Type: Normal, Dry, Combination, and Oily',
+            'concerns': 'Concerns: Dryness, Pores, Dullness, Uneven Texture, and Loss of Firmness',
+            'core ingredients': 'This set contains: Miracle Seed Essence, Alpine Berry Water Cream, Mild Facial Peeling Gel, Clean Berry Lip Mask, Miracle Seed Cotton sheets'
+        },
+        {
+            'id': 1,
+            'name': 'Primera: Glow Is All You Seed Intro Kit',
+            'price': 40,
+            'image': 'all-in-one2.png',
+            'category': 'all-in-one',
+            'what is it': "What is it: A glow-boosting skin sampler featuring four of Primera’s bestselling heroes, all TSA-approved and designed to deliver nonstop radiance and moisture",
+            'skin Type': "Skin Type: Normal, Dry, Combination, and Oily",
+            'concerns': "Concerns: Dryness, Dullness, and Uneven Texture",
+            'core ingredients': 'This set contains: (Super Volcanic Clusters) Pore Clearing Clay Mask, (Green Tea Seed) Intensive Hydrating Serum, (Orchid) Youth-Enriched Cream'
+        },
+
+        {
+            'id': 2,
+            'name': 'Saturday Skin: Wide Awake Brightening Eye Cream',
+            'price': 46,
+            'image': 'eyecare1.png',
+            'category': 'eye care',
+            'what is it': "What is it: A hydrating eye cream with date seed extract that illuminates and refreshes the eye area.",
+            'skin type': 'Skin Type: Normal, Dry, Combination, and Oily',
+            'concerns': 'Concerns: Dryness, Dark Circles, and Puffiness',
+            'core ingredients': 'Core Ingredients: Cha-7 es Complex, Date Seed Extract, Avocado Protein Extract'
+    },
+        {
+            'id': 2,
+            'name': 'Belif: Moisturizing Eye Bomb',
+            'price': 48,
+            'image': 'eyecare2.png',
+            'category': 'eye care',
+            'what is it': 'What is it: A lightweight, refreshing eye cream that smooths fine lines with a 26-hour burst of moisture, boosts elasticity, and increases the resilience of the skin for flawless makeup application.',
+            'skin type': 'Skin Type: Normal, Dry, Combination, Sensitive, and Oily',
+            'concerns': 'Concerns: Dryness, loss of firmness and elasticity, fine lines and wrinkles',
+            'core ingredients': 'Core Ingredients: Tiger Grass (Pennywort), Comfrey Leaf'
+    },
+        {
+            'id': 3,
+            'name': 'Inissfree: Orchid Youth-Enriched Gel Cream',
+            'price': 29,
+            'image': 'moisturizer1.png',
+            'category': 'moisturizer',
+            'what is it': 'What is it: A daily gel-cream that offers lightweight hydration, and targets early signs of aging with Jeju orchid, naturally-derived hyaluronic acid, and beta glucan.',
+            'skin type': 'Skin Type: Combination and Oily',
+            'concerns': 'Concerns: Loss of Firmness and Elasticity, Fine Lines and Wrinkles, and Oiliness',
+            'core ingredients': 'Core Ingredients: Orchid Elixir, Hyaluronic Acid, Peptides'
+    },
+        {
+            'id': 4,
+            'name': 'Belif: The True Cream Aqua Bomb',
+            'price': 38,
+            'image': 'moisturizer2.png',
+            'category': 'moisturizer',
+            'what is it': 'What is it: An ultra-lightweight, oil-free gel cream that instantly cools and refreshes skin while providing intensive hydration',
+            'skin type': 'Normal, Oily, Combination',
+            'concerns': 'Concerns: Dryness and Pores',
+            'core ingredients': 'Core Ingredients: Lady\'s Mantle, Malachite, Plantin, Oat Husk'
+    },
+        {
+            'id': 5,
+            'name': 'Primera: Alpine Berry Water Cream',
+            'price': 40,
+            'image': 'moisturizer3.png',
+            'category': 'moisturizer',
+            'what is it': 'What is it: A dewy cream that sinks in instantly while providing lasting hydration and nourishment',
+            'skin type': 'Skin Type: Dry',
+            'concerns': 'Dryness, Dullness, and Uneven Texture',
+            'core ingredients': 'Core Ingredients: Water-Stay Technology, Coconut-derived Oil, Artemisia Extract'
+    },
+        {
+            'id': 6,
+            'name': 'Innisfree: Super Volcanic Clusters Pore Clearing Clay Mask',
+            'price': 15,
+            'image': 'mask1.png',
+            'category': 'masks',
+            'what is it': 'What is it: A deep-cleansing creamy clay mask—formulated with absorbent Jeju Super Volcanic Clusters™ and AHA—that helps clear pores while it exfoliates.',
+            'skin type': 'Skin Type: Normal, Combination, and Oily',
+            'concerns': 'Concerns: Pores, Oiliness, Dullness, and uneven texture',
+            'core ingredients': 'Core Ingredients: Jeju Volcanic Clusters and Lactic Acid'
+    },
+        {
+            'id': 7,
+            'name': 'Innisfree: Super Volcanic Clusters Pore Clearing Clay Mousse Mask',
+            'price': 21,
+            'image': 'mask2.png',
+            'category': 'masks',
+            'what is it': 'What is it: A clay mask in a light-as-air mousse that helps clear pores with Jeju Super Volcanic Clusters™ while AHA and BHA dually exfoliate skin.',
+            'skin type': 'Skin Type: Normal, Combination, and Oily',
+            'concerns': 'Concerns: Pores, Dullness and Uneven Texture, and Oiliness',
+            'core ingredients': 'Core Ingredients: Jeju Volcanic Clusters and Salicylic Acid'
+        }
+    ],
+        "stores": [
+        {   "city": "New York",
+            "products_available": [
+                {"id": 0,
+                 "stock": 50
+                 },
+                {"id": 1,
+                 "stock": 50
+                 },
+                {"id": 2,
+                 "stock": 50
+                 },
+                {"id": 3,
+                 "stock": 50
+                 },
+                {"id": 4,
+                 "stock": 50
+                 },
+                {"id": 5,
+                 "stock": 50
+                 },
+                {"id": 6,
+                 "stock": 50
+                 },
+                {"id": 7,
+                 "stock": 50
+                 }
+            ]
+            },
+        {   "city": "Paris",
+            "products_available": [
+                {"id": 0,
+                 "stock": 30
+                 },
+                {"id": 1,
+                 "stock": 30
+                 },
+                {"id": 2,
+                 "stock": 30
+                 },
+                {"id": 3,
+                 "stock": 30
+                 },
+                {"id": 4,
+                 "stock": 30
+                 },
+                {"id": 5,
+                 "stock": 30
+                 },
+                {"id": 6,
+                 "stock": 30
+                 },
+                {"id": 7,
+                 "stock": 30
+                 }
+            ]
+            },
+        {
+            "city": "Tel Aviv",
+            "products_available": [
+                {"id": 0,
+                 "stock": 20
+                 },
+                {"id": 1,
+                 "stock": 20
+                 },
+                {"id": 2,
+                 "stock": 20
+                 },
+                {"id": 3,
+                 "stock": 20
+                 },
+                {"id": 4,
+                 "stock": 20
+                 },
+                {"id": 5,
+                 "stock": 20
+                 },
+                {"id": 6,
+                 "stock": 20
+                 },
+                {"id": 7,
+                 "stock": 20
+                 }
+            ]
+        }
+        ]
+    }
+
+THEMES |
+ -&#45;&#45;&#45;&#45;&#45;&#45;|
+Flask
+Classes, Object
+List, Dictionaries, JSON
+Functions
+Regular Expressions
+Note:
+1. The questions of this project are not detailed on purpose, so you will think of all the functionalities by yourself
+2. Important: Everything has to be User Friendly. Don’t forget that they are functionalities for a website.
+3. Important: Think about the structure of your code, it has to be READEABLE
+WORK LOGICALLY
+TAKE YOUR TIME
+TEST THE RESULTS
+&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;
+
+Subject: We want to create functionalities for a Shoe Store Website.
+Our client has already one file to store the products.
+
+Here are the functionalities that the client wants for his website.
+1. Be able to ask the customer for the location of the wanted store (1 possibility)
+2. Be able to ask the customer for the color wanted (1 possibility)
+3. Be able to inform the user of the name, brand, price, and number of shoes in the particular store, in the particular color. (Note: the number is the number of pair)
+4. Be able to ask the customer for his order (brand, name, quantity) and sum it up. All the orders have to be saved permanently. A customer can have more than one order.
+5. Be able to change permanently the number of pair of shoes available in the store, depending on the quantity ordered.
+6. If the user doesn’t give a quantity (and in order to not get stuck), the quantity ordered should be one by default.
+7. Be able to see the customers’ orders only if the status of the user of the website is “Administrator”.
+One of our clients, liked the functionalities we created for the Shoe Store Website. They want the same, but they also want special functionalities:
+1. They want their customers to be able to search for a brand and/or name, and then inform them of the available shoes for the word typed.
+2. Even if their customers, don’t type the whole name of a brand and/or name, they still want to be able to inform them of the available shoes for the word typed.
+3. They want their customers to be able to give a review on their order and to save it permanently. The result has to be translated into stars, depending on the amount of positive or negative words used by the customer.
+Example: “Very nice shoes, very pretty, very comfortable” will be translated by 3 stars (***)
+Example: “Very nice shoes, very pretty, but not comfortable” will be translated by 2 stars (**)-->

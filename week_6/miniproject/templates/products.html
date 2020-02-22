@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>SOKO SKIN LABS</title>
+{% endblock %}
+
+{% block content %}
+<div class="'productpage" style="color: #A2CBDC; text-shadow: 1px 1px #C1E4F3">
+    <br>
+    <h1 style="text-align: center;font-weight: bold">SOKO SKIN LABS</h1>
+    <br><br>
+    {% for item in product %}
+    <a href="/product_specs/{{item['id']}}" style="color: #A2CBDC; text-align:center"> <h1>{{item['name']}}</h1></a>
+        {% if item['stock'] > 0 %}
+            <p style="text-align: center; color: #A2CBDC">PRICE: ${{item['price']}} </p>
+        {% else %}
+            <p style="text-align: center" class="outofstock">OUT OF STOCK</p>
+        {% endif %}
+    {% endfor %}
+</div>
+
+
+{% endblock %}

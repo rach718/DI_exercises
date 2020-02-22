@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    <title>SOKO SKIN LABS</title>
+{% endblock %}
+
+
+{% block content %}
+    <br>
+    <h1 style="color: #A2CBDC; text-align:center">SOKO SKIN LABS</h1>
+	<br>
+
+  <div class="jumbotron" style="background-image: {{ url_for('static', filename = 'images/home1.jpg') }}">
+
+    <div class="jumbotron-content">
+     	<h2 class="display-4" style="color: white; text-align: center">YOUR PATH TO FLAWLESS SKIN</h2><br>
+		<p class="lead">
+		<h2 class="display-5" style="color: white; text-align: center">STRONG. HEALTHY. BEAUTIFUL.</h2>
+		</p>
+	</div>
+
+{% endblock%}
+

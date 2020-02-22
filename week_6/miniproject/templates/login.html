@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<div class = "jumbotron>
+<div class =loginform" style="text-align: center; font-weight:bold; color: grey">
+    <br>
+    <br>
+    <form method="POST">
+        {{form.hidden_tag()}}
+
+        <p>{{ form.username.label }} {{ form.username(size=30) }}</p>
+        <p>{{ form.password.label}} {{ form.password(size=30) }}</p>
+        <p>{{ form.submit}}</p>
+
+    <img style="width: 100%; height:50%" src="static/images/general/home6.jpg">
+    </form>
+</div>
+</div>
+
+{% endblock %}
