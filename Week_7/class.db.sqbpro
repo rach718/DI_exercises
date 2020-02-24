@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/racheljakob/Desktop/devinstitute/DI_exercises/Week_7/class.db" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1316"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="student"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="sqlite_sequence" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk=""><sort/><column_widths/><filter_values/><display_formats/><hidden_columns/><plot_y_axes/></table><table schema="main" name="student" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk=""><sort><column index="5" mode="0"/></sort><column_widths/><filter_values/><display_formats/><hidden_columns/><plot_y_axes/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">SELECT * FROM student;
+SELECT Last_name, first_name FROM student;
+SELECT first_name, last_name FROM student  WHERE id=2;
+SELECT first_name, last_name FROM student  WHERE last_name=&quot;Dupont&quot; and first_name=&quot;Marc&quot;;
+SELECT first_name, last_name FROM student  WHERE last_name=&quot;Dupont&quot; or first_name=&quot;Marc&quot;;
+SELECT first_name, last_name FROM student  WHERE first_name LIKE &quot;%a%&quot;;
+SELECT first_name, last_name FROM student  WHERE first_name LIKE &quot;a%&quot;;
+SELECT first_name, last_name FROM student  WHERE first_name LIKE &quot;%a&quot;;
+SELECT first_name, last_name FROM student where substr(first_name, 2, 1)=&quot;a&quot;;
+SELECT first_name, last_name FROM student WHERE id=1 or id= 3;
+SELECT first_name, last_name, birth_date FROM student WHERE birth_date&gt;=&quot;2000-01-01&quot;;
+SELECT first_name, last_name, birth_date FROM student ORDER BY birth_date DESC;
+UPDATE student SET first_name = &quot;Lea&quot; WHERE first_name = &quot;lea&quot;;
+UPDATE student SET birth_date = &quot;1998-02-11&quot; WHERE last_name=&quot;Dupont&quot;;
+DELETE FROM student WHERE id=5;
+SELECT count(first_name) FROM student;
+SELECT count(first_name) FROM student WHERE birth_date&gt;&quot;01/01/2000&quot;;
+ALTER TABLE student ADD math_grade varchar(3);
+UPDATE student SET math_grade=80 WHERE id=1;
+UPDATE student SET math_grade=90 WHERE id=2 or id=4;
+UPDATE student SET math_grade=100 WHERE id=6;
+SELECT count(math_grade) FROM student WHERE math_grade&gt;83;
+INSERT INTO student (first_name, last_name, birth_date, math_grade) VALUES (&quot;Omer&quot;, &quot;Simpson&quot;, &quot;1980-03-10&quot;, 10);
+SELECT count(math_grade) AS total_grade from student;
+SELECT SUM(math_grade) FROM student;
+
+
+
+
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
