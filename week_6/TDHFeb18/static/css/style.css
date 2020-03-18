@@ -11,3 +11,11 @@
 h2{
 	text-align: center;
 }
+
+.center{
+    display: flex;
+    justify-content: center;
+
+    height: 100px;
+    text-align: center;
+}
